@@ -1,5 +1,3 @@
-const API_URL = "https://balikpapan-1-api.up.railway.app";
-
 const fetchBlogs = async () => {
     const BlogsContainer = document.getElementById("blog")
 
@@ -17,16 +15,16 @@ const fetchBlogs = async () => {
         newBlogs.classList.add()
         newBlogs.innerHTML = `
         <div class="blog-box">
-                <div class="blog-img">
-                    <img src="${element.image}">
-                </div>
-                <div class="blog-details">
-                    <h4>${element.title}</h4>
-                    <p>${element.content}</p>
-                    <a href="#">CONTINUE READING</a>
-                </div>
-                <h1>13/01</h1>
-            </div>`
+            <div class="blog-img">
+                <img src="${element.image}">
+            </div>
+            <div class="blog-details">
+                <h4>${element.title}</h4>
+                <p>${element.content}</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13/01</h1>
+        </div>`
 
         
         BlogsContainer.appendChild(newBlogs)

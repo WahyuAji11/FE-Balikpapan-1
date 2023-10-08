@@ -1,6 +1,7 @@
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
+const API_URL = "https://balikpapan-1-api.up.railway.app";
 
 if (bar){
     bar.addEventListener('click', () =>{
@@ -38,12 +39,12 @@ updateSlides();
 setInterval(slideNext, 5000); // Change image every 5 seconds
 
 
-fetch('http://localhost:3000/api/data')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+// fetch('http://localhost:3000/api/data')
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
 
